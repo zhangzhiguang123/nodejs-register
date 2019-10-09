@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          
+          outline: 0;
+      }
+      #main{
+          background: #ffffff;
+          width: 1200px;
+          height: 500px;
+          margin: 0 auto;
+      }
+      form{
+          width: 700px;
+          height: 600px;
+          margin: 0 auto;
+      }
+      label{
+         font-size:16px;
+         color: #666; 
+      };
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="http://localhost:8001" method="GET">
+        <label for="username">请输入用户名：</label><input type="text" name="username" id="username"><br/>
+        <label for="password">请输入密码：</label><input type="password" name="password" id="password"><br/>
+        <label for="repsd">重复密码：</label><input type="password" name="repsd" id="repsd"><br>
+        <label for="tel">请输入电话号码：</label><input type="text" name="tel" id="tel"><br>
+        <input type="submit" value="注册">
+    </form>
+    </div>
+</body>
+</html>
